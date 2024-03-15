@@ -1,0 +1,19 @@
+//キーボードの矢印キーで自機(プレイヤー)を動かす
+		Player.onenterframe = function(){
+			if(game.input.right){
+				this.x += 3;
+				this.scaleX = 1;
+			}
+			if(game.input.down){
+				this.y += 3;
+				this.scaleX = -1;	
+			}
+			if(game.input.left){
+				this.x -= 3;
+				this.scaleX = -1;	
+			}
+			if(game.input.up){
+				this.y -= 3;
+				this.scaleX = 1;
+			}
+		}//自機が上下左右動くやつ
